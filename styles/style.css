@@ -1,3 +1,21 @@
+* {
+	font-family : monospace ;
+	color : #f0f0f0 ;
+	background-color : #101010 ;
+}
 .maintitle {
+	color : #f0f0f0 ;
 	font-size : 20px;
+	display : block;
+	text-align : center;
+	margin-left : 50px;
+	margin-right : 50px;
+}
+.content {
+	margin-left : 20px;
+	margin-right : 20px;
+	margin-top : 20px ;
+	margin-top : 20px;
+	text-align : center ;
+	box-shadow 0px 0px 10px #ffffff
 }
