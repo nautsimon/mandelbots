@@ -1,7 +1,7 @@
 * {
 	font-family : monospace ;
 	color : #f0f0f0 ;
-	background-color : #101010 ;
+	background-color : #202020 ;
 }
 .maintitle {
 	color : #f0f0f0 ;
@@ -11,11 +11,30 @@
 	margin-left : 50px;
 	margin-right : 50px;
 }
+.logo {
+	font-size : 10px;
+	display : block;
+	text-align : center;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	margin-left : 50px;
+	margin-right : 50px;
+	color : #33c89e ;
+}
 .content {
+	margin-left : 80px;
+	margin-right : 80px;
+	margin-top : 20px ;
+	margin-bottom : 20px;
+	/*text-align : center ;*/
+	box-shadow: 0px 0px 2px 2px #101010;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #33c89e;
+	
+}
+p {
+	font-size : 16px;
 	margin-left : 20px;
 	margin-right : 20px;
-	margin-top : 20px ;
-	margin-top : 20px;
-	text-align : center ;
-	box-shadow 0px 0px 10px #ffffff
 }
