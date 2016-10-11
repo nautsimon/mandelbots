@@ -33,6 +33,25 @@
 	border-color : #33c89e;
 	
 }
+.navbar {
+	margin-left : 50px;
+	margin-right : 50px;
+	margin-top : 20px ;
+	margin-bottom : 40px;
+	text-align : center ;
+	box-shadow: 0px 0px 2px 2px #101010;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #33c89e;
+	display : block;
+}
+.navcont {
+	font-size : 15px;
+	color #33c89e;
+}
+.active {
+	background-color : #ffffff;
+}
 p {
 	font-size : 16px;
 	margin-left : 20px;
