@@ -1,40 +1,82 @@
 * {
 	font-family : monospace ;
-	color : #f0f0f0 ;
-	background-color : #202020 ;
+	color : #202020 ;
+	background-color : #e8e8e8 ;
 }
 .maintitle {
-	color : #f0f0f0 ;
-	font-size : 20px;
+	color : #202020 ;
+	font-size : 140%;
 	display : block;
 	text-align : center;
-	margin-left : 50px;
-	margin-right : 50px;
+	margin-left : auto;
+	margin-right : auto;
 }
 .logo {
-	font-size : 10px;
+	/*font-size : 10px;*/
 	display : block;
 	text-align : center;
 	margin-top : 10px;
 	margin-bottom : 10px;
-	margin-left : 50px;
-	margin-right : 50px;
-	color : #33c89e ;
+	margin-left : auto;
+	margin-right : auto;
+	width : 90%;
+	height : auto;
+	/*font-weight : bold;
+	color : #000000 ;*/
 }
 .content {
-	margin-left : 80px;
-	margin-right : 80px;
+	margin-left : 10%;
+	margin-right : 10%;
 	margin-top : 20px ;
 	margin-bottom : 20px;
 	/*text-align : center ;*/
 	box-shadow: 0px 0px 2px 2px #101010;
 	border-style : solid;
 	border-width : 2px;
-	border-color : #33c89e;
+	border-color : #801010;
 	
 }
 p {
-	font-size : 16px;
-	margin-left : 20px;
-	margin-right : 20px;
+	font-size : 120%;
+	margin-left : 2%;
+	margin-right : 2%;
+}
+h {
+	font-size : 140%;
+	font-weight: bold;
+	display : block;
+	margin-left : 2%;
+	margin-top : 10px;
+	margin-bottom: 10px;
+	color : #801010;
+}
+h1 {
+	margin-left : 2%;
+}
+.navbar {
+	display : block;
+	margin-left : 8%;
+	margin-right : 8%;
+	padding : 5px;
+	text-align : center ;
+	box-shadow: 0px 0px 2px 2px #101010;
+	border-style : solid;
+	border-width : 2px;
+	border-color : #801010;
+}
+.navc {
+	font-size : 140%;
+	color : #e05050;
+}
+.active {
+	background-color : #ffffff;
+}
+img {
+	margin-top : 20px;
+	margin-bottom : 20px;	
+	display : block;
+	width : 60%;
+	height : auto;
+	margin-left : auto;
+	margin-right : auto;
 }
