@@ -10,6 +10,7 @@ while (i < 5) {
 	}
 	i++;
 }
+
 function prev() {
 	if (slide > 0) {
 		slide--;
@@ -42,6 +43,9 @@ function next() {
 		i++;
 	}
 }
+setInterval(function(){
+  console.log("fuck");
+}, 500);
 </script>
 <div class="content">
 	<div class="slideshow" onload="prev()">
@@ -52,6 +56,6 @@ function next() {
 		<img id="img4" class="slide" src="pics/slide4.jpeg"></img>
 	</div>
 	<div class="slidebar">
-	<button class="prev" onclick="prev()"></button><button class="next" onclick="next()"></button>
+	<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button><button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
 	</div>
 </div>

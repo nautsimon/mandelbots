@@ -1,7 +1,10 @@
 * {
 	font-family : monospace ;
 	color : #202020 ;
-	background-color : #e8e8e8 ;
+	background : transparent;
+}
+:root {
+	background-color : #ffffff;
 }
 .maintitle {
 	color : #202020 ;
@@ -19,8 +22,7 @@
 	margin-bottom : 10px;
 	margin-left : auto;
 	margin-right : auto;
-	width : 90%;
-	height : auto;
+	height : 200px;
 	box-shadow : 0px 0px 0px 0px;
 	/*font-weight : bold;
 	color : #000000 ;*/
@@ -31,27 +33,22 @@
 	margin-top : 20px ;
 	margin-bottom : 20px;
 	/*text-align : center ;*/
-	box-shadow: 0px 0px 2px 2px #101010;
+	/*box-shadow: 0px 0px 2px 2px #101010;
 	border-style : solid;
 	border-width : 2px;
-	border-color : #801010;
+	border-color : #801010;*/
 	
 }
 .navbar {
-	margin-left : 50px;
-	margin-right : 50px;
-	margin-top : 20px ;
-	margin-bottom : 40px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-top : 0px ;
+	margin-bottom : 0px;
+	height : 50px;
 	text-align : center ;
-	box-shadow: 0px 0px 2px 2px #101010;
-	border-style : solid;
-	border-width : 2px;
-	border-color : #33c89e;
+	position : relative;
 	display : block;
-}
-.navcont {
-	font-size : 15px;
-	color #33c89e;
+	background-color : #e05050;;
 }
 .active {
 	background-color : #ffffff;
@@ -73,20 +70,14 @@ h {
 h1 {
 	margin-left : 2%;
 }
-.navbar {
-	display : block;
-	margin-left : 8%;
-	margin-right : 8%;
-	padding : 5px;
-	text-align : center ;
-	box-shadow: 0px 0px 2px 2px #101010;
-	border-style : solid;
-	border-width : 2px;
-	border-color : #801010;
-}
+
 .navc {
-	font-size : 140%;
-	color : #e05050;
+	font-size : 200%;
+	color : #ffffff;
+	margin-left : 1%;
+	margin-right : 1%;
+	position : relative;
+	top : 25%;
 }
 .active {
 	background-color : #ffffff;
@@ -106,17 +97,43 @@ img {
 }
 .prev {
 	display : inline-block;
-	margin-right : 47%;
-	bottom : -50%;
+	position : absolute;
+	top :-500%;
+	background-image: url("../pic/background.jpg");
+	padding-top : 0%;
+	padding-bottom : 0%;
+	padding-left : 0%;
+	padding-right : 0%;
+	width : 5%;
+	border : none;
 }
 .next {
 	display : inline-block;
-	margin-left : 47%;
-	position : relative;
-	top : 50%;
+	position : absolute;
+	top :-500%;
+	right : 0%;
+	background-image: url("../pic/background.jpg");
+	padding-top : 0%;
+	padding-bottom : 0%;
+	padding-left : 0%;
+	padding-right : 0%;
+	width : 5%;
+	border : none;
+}
+.navi {
+	margin-bottom : 0%;
+	margin-top : 0%;
+	margin-right : 0%;
+	margin-left : 0%;
+	width : 100%;
+	height : auto;
+	opacity : 0.5;
+	box-shadow : none;
 }
 .slidebar{
 	width: 60%;
+	height : 10%;
 	margin-left : auto;
 	margin-right : auto;
+	position : relative;
 }
