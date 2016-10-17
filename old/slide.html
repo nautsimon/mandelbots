@@ -6,7 +6,6 @@
 <body>
 	<div class="maindiv">
 		<img src="logo.png" class="logo"></img>
-		<h class="maintitle">Welcome to the Urbana Mandelbots website</h>
 		<l class="navbar">
 			<a href="index.html" class="navc">[home]</a>
 			<a href="ftc.html" class="navc">[about ftc]</a>
@@ -16,15 +15,6 @@
 <script>
 slide = 0;
 i = 0;
-while (i < 5) {
-	if (i == slide) {
-		document.getElementById("img" + i.toString()).style.display = "block";
-		console.write("poo")
-	} else {
-		document.getElementById("img" + i.toString()).style.display = "none"; 
-	}
-	i++;
-}
 
 function prev() {
 	if (slide > 0) {
@@ -58,9 +48,7 @@ function next() {
 		i++;
 	}
 }
-setInterval(function(){
-  console.log("fuck");
-}, 500);
+
 </script>
 <div class="content">
 	<div class="slideshow" onload="prev()">

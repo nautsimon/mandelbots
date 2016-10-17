@@ -15,15 +15,6 @@
 <script>
 slide = 0;
 i = 0;
-while (i < 5) {
-	if (i == slide) {
-		document.getElementById("img" + i.toString()).style.display = "block";
-		console.write("poo")
-	} else {
-		document.getElementById("img" + i.toString()).style.display = "none"; 
-	}
-	i++;
-}
 
 function prev() {
 	if (slide > 0) {
@@ -57,9 +48,7 @@ function next() {
 		i++;
 	}
 }
-setInterval(function(){
-  console.log("fuck");
-}, 500);
+
 </script>
 <div class="content">
 	<div class="slideshow" onload="prev()">

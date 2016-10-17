@@ -10,4 +10,55 @@
 <p style="font-style: italic">
 (in italics) for more information visit this cool fractal calculator: <a href="http://www.easyfractalgenerator.com/mandelbrot-set-generator.aspx">[link]</a>
 </p>
+<h1>Slideshow of us</h1>
+<script>
+slide = 0;
+i = 0;
+
+function prev() {
+	if (slide > 0) {
+		slide--;
+	} else {
+		slide = 4;
+	}
+	i = 0;
+	while (i < 5) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+function next() {
+	if (slide < 4) {
+		slide++;
+	} else {
+		slide = 0;
+	}
+	i = 0;
+	while (i < 5) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+
+</script>
+<div class="content">
+	<div class="slideshow" onload="prev()">
+		<img id="img0" class="slide" style="display:block" src="pics/slide0.jpeg"></img>
+		<img id="img1" class="slide" src="pics/slide1.jpeg"></img>
+		<img id="img2" class="slide" src="pics/slide2.jpeg"></img>
+		<img id="img3" class="slide" src="pics/slide3.jpeg"></img>
+		<img id="img4" class="slide" src="pics/slide4.jpeg"></img>
+	</div>
+	<div class="slidebar">
+	<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button><button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
+	</div>
+</div>
 </div>
