@@ -101,3 +101,22 @@ img {
 	margin-right : auto;
 	box-shadow: 0px 0px 2px 2px #101010;
 }
+.slide {
+	display: none;
+}
+.prev {
+	display : inline-block;
+	margin-right : 47%;
+	bottom : -50%;
+}
+.next {
+	display : inline-block;
+	margin-left : 47%;
+	position : relative;
+	top : 50%;
+}
+.slidebar{
+	width: 60%;
+	margin-left : auto;
+	margin-right : auto;
+}
