@@ -23,10 +23,10 @@ function prev() {
 	if (slide > 0) {
 		slide--;
 	} else {
-		slide = 4;
+		slide = 6;
 	}
 	i = 0;
-	while (i < 5) {
+	while (i < 7) {
 		if (i == slide) {
 			document.getElementById("img" + i.toString()).style.display = "block";
 		} else {
@@ -36,13 +36,13 @@ function prev() {
 	}
 }
 function next() {
-	if (slide < 4) {
+	if (slide < 6) {
 		slide++;
 	} else {
 		slide = 0;
 	}
 	i = 0;
-	while (i < 5) {
+	while (i < 7) {
 		if (i == slide) {
 			document.getElementById("img" + i.toString()).style.display = "block";
 		} else {
@@ -54,11 +54,13 @@ function next() {
 
 </script>
 	<div class="slideshow" onload="prev()">
-		<img id="img0" class="slide" style="display:block" src="pics/slide0.jpeg"></img>
-		<img id="img1" class="slide" src="pics/slide1.jpeg"></img>
-		<img id="img2" class="slide" src="pics/slide2.jpeg"></img>
-		<img id="img3" class="slide" src="pics/slide3.jpeg"></img>
-		<img id="img4" class="slide" src="pics/slide4.jpeg"></img>
+		<img id="img0" class="slide" style="display:block" src="pics/robot1.jpg"></img>
+		<img id="img1" class="slide" src="pics/robot2.jpg"></img>
+		<img id="img2" class="slide" src="pics/robot3.jpg"></img>
+		<img id="img3" class="slide" src="pics/robot4.jpg"></img>
+		<img id="img4" class="slide" src="pics/robot5.jpg"></img>
+		<img id="img5" class="slide" src="pics/robot6.jpg"></img>
+		<img id="img6" class="slide" src="pics/robot7.jpg"></img>
 	</div>
 	<div class="slidebar">
 	<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button><button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
