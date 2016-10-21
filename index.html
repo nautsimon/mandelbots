@@ -18,15 +18,15 @@
 <script>
 slide = 0;
 i = 0;
-
+s = 7;
 function prev() {
 	if (slide > 0) {
 		slide--;
 	} else {
-		slide = 6;
+		slide = s-1;
 	}
 	i = 0;
-	while (i < 7) {
+	while (i < s) {
 		if (i == slide) {
 			document.getElementById("img" + i.toString()).style.display = "block";
 		} else {
@@ -36,13 +36,13 @@ function prev() {
 	}
 }
 function next() {
-	if (slide < 6) {
+	if (slide < s-1) {
 		slide++;
 	} else {
 		slide = 0;
 	}
 	i = 0;
-	while (i < 7) {
+	while (i < s) {
 		if (i == slide) {
 			document.getElementById("img" + i.toString()).style.display = "block";
 		} else {

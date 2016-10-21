@@ -1,4 +1,56 @@
 	<div class="content">
+<div class="content">
+<script>
+slide = 0;
+i = 0;
+s = 7;
+function prev() {
+	if (slide > 0) {
+		slide--;
+	} else {
+		slide = s-1;
+	}
+	i = 0;
+	while (i < s) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+function next() {
+	if (slide < s-1) {
+		slide++;
+	} else {
+		slide = 0;
+	}
+	i = 0;
+	while (i < s) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+
+</script>
+	<div class="slideshow" onload="prev()">
+		<img id="img0" class="slide" style="display:block" src="pics/robot1.jpg"></img>
+		<img id="img1" class="slide" src="pics/robot2.jpg"></img>
+		<img id="img2" class="slide" src="pics/robot3.jpg"></img>
+		<img id="img3" class="slide" src="pics/robot4.jpg"></img>
+		<img id="img4" class="slide" src="pics/robot5.jpg"></img>
+		<img id="img5" class="slide" src="pics/robot6.jpg"></img>
+		<img id="img6" class="slide" src="pics/robot7.jpg"></img>
+	</div>
+	<div class="slidebar">
+	<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button><button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
+	</div>
+
 		<h1>Our Robot</h1>
 		<p>Our robot is based on the actobotics robotics platform. As of now we have completed the chassis and are working on the drive-train and launcher system.We aim to focus on autonmous mode by designing our robot for consistancy and having a good AI. </p>
 		<h1>The Drivetrain</h1>
