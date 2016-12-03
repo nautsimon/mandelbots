@@ -23,6 +23,7 @@
 	margin-left : auto;
 	margin-right : auto;
 	height : 200px;
+	width : auto;
 	box-shadow : 0px 0px 0px 0px;
 	/*font-weight : bold;
 	color : #000000 ;*/
@@ -48,7 +49,7 @@
 	text-align : center ;
 	position : relative;
 	display : block;
-	background-color : #e05050;;
+	background-color : #101010;;
 }
 .active {
 	background-color : #ffffff;
@@ -56,7 +57,7 @@
 .biopic {
 	float : left;
 	height : auto;
-	width : 20px;
+	width : 60px;
 	margin-top : 2px;
 	margin-bottom : 2px;
 }
@@ -72,7 +73,7 @@ h {
 	margin-left : 2%;
 	margin-top : 10px;
 	margin-bottom: 10px;
-	color : #801010;
+	color : #101010;
 	clear : all;
 }
 h1 {
@@ -82,12 +83,12 @@ h1 {
 	border-width : 0px 0px 2px 2px;
 }
 a {
-	color : #e05050;
+	color : #101010;
 	display : inline;
 }
 a:hover {
 	color : #ffffff;
-	background-color : #e05050;
+	background-color : #101010;
 }
 br {
 	margin-top : 20px;
@@ -101,7 +102,7 @@ br {
 	top : 25%;
 }
 .navc:hover {
-	color : #e05050;
+	color : #101010;
 	background-color : #ffffff;
 }
 .active {
@@ -166,7 +167,7 @@ img {
 	opacity : 0.5;
 	box-shadow : none;
 }
-.slidebar{
+.slidebar {
 	width: 60%;
 	height : 10%;
 	margin-left : auto;
