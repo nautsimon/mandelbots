@@ -1,5 +1,6 @@
 slide = 0;
 i = 0;
+window.setInterval(next, 2000);
 function upd() {
 	i = 0;
 	while (i < s) {
