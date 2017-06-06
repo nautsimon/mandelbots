@@ -2,6 +2,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>Urbana Mandelbots</title>
 	<link rel="icon" type="image/png" href="mandel.png" sizes="196x196">
+	<meta name="google-site-verification" content="TIg6posjKIYrBZRGDGyEXLCnD_cynvzRXFz1et2pVKM" />	
 </head>
 <meta charset="utf-8"/>
 <body>
@@ -15,41 +16,5 @@
 			<a href="log.html" class="navc">[meeting logs]</a>
 			<a href="bios.html" class="navc">[bios]</a>
 		</l>
-<div class="content">
-<script>
-s = 14
-</script>
-<script src="scripts/slide.js">
-</script>
-	<div class="slideshow" onload="prev()">
-		<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button>
-		<img id="img0" class="slide" style="display:block" src="pics/robot1.jpg"></img>
-		<img id="img1" class="slide" src="pics/robot2.jpg"></img>
-		<img id="img2" class="slide" src="pics/robot3.jpg"></img>
-		<img id="img3" class="slide" src="pics/robot4.jpg"></img>
-		<img id="img4" class="slide" src="pics/robot5.jpg"></img>
-		<img id="img5" class="slide" src="pics/robot6.jpg"></img>
-		<img id="img6" class="slide" src="pics/robot7.jpg"></img>
-		<img id="img7" class="slide" src="pics/robot8.jpg"></img>
-		<img id="img8" class="slide" src="pics/robot9.jpg"></img>
-		<img id="img9" class="slide" src="pics/robot10.jpg"></img>
-		<img id="img10" class="slide" src="pics/robot11.jpg"></img>
-		<img id="img11" class="slide" src="pics/robot12.jpg"></img>
-		<img id="img12" class="slide" src="pics/robot13.jpg"></img>
-		<img id="img13" class="slide" src="pics/robot14.jpg"></img>
-		<button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
-	</div>
-
-		<h1>Our Robot</h1>
-		<p>Our robot is based on the actobotics robotics platform. As of now we have completed the chassis and are working on the drive-train and launcher system.We aim to focus on autonmous mode by designing our robot for consistancy and having a good AI. </p>
-		<h1>The Drivetrain</h1>
-		<p>The robot uses 6 wheels, two regular wheels in the middle and 4 omniwheelw on the outside.The omniwheels allow for rotation around a point that is between the two center wheels that is in the middle of the robot.By having 6 wheels with no slippage in our locomotion, we can have the consistancy we need for our autonomous mode focus.We drive the wheeks directly with only the back two omniwheels and center wheels being driven.</p>
-		<h1>The Launcher</h1>
-		<p>Out launcher is planned to use two vertical fly wheels to launch thr ball.The flywheels will be on a curved ramp with a concave area for newly collected balls.A third fly wheel pushes the balk twoard the launcher when needed.We plan to control the angle of the ball by adjusting the speed difference between the two flywheels.Our goal is to either develop a model of this mechanism to produce arbitrary angles, or to collect enough data to estimate them.</p>
-		<h1>The programming and sensor system</h1>
-		<p>Our robot is on focussed autonomous mode, and we aim to put much effort into the programming of.We plan to use mostly the phone's IMU sensors and camera to collect data for our AI.Currently we are planning on implementing the AI with the tensorflow library either inside of the main package in java, or in an external python script.The architecture of the AI involves three layers,Object detection, Image classification, and localization. First we aim to use unsupervised training to create a covolutional neural network that detects discrete objects in the image. Another implmentation of this layer we plan on testing is saturation threshhold based one with no machine learning that takes advantage of the high saturation of the game pieces. Next we aim to use supervised training to classify the objects into the game pieces they are and approximate distance by noting the size of the object.This could be reinforced with data from the IMU.Lastly, as the phone IMU sensors are inaccurate, we will augment localization with the known locations of stationary pieces by recording the angle of the camera and the pixel location of the stationary piece. </p>
-		<h1>The collection system</h1>
-		<p>To get the balls onto the launcher ramp, we intend to first push them in with "flappers", and move them up the ramp with the common rotating zip-tie mechanism into the concave ball holding spot. The concave portion itself will also slope inwards from the sides to position it for launching.</p>
-	</div>
 	</div>
 </body>
