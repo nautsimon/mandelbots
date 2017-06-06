@@ -1,6 +1,6 @@
 slide = 0;
 i = 0;
-window.setInterval(next, 2000);
+slidetimer = setInterval(next,2000);
 function upd() {
 	i = 0;
 	while (i < s) {
@@ -11,7 +11,8 @@ function upd() {
 		}
 		i++;
 	}
-
+	clearInterval(slidetimer);
+	slidetimer = setInterval(next,2000);
 }
 function prev() {
 	if (slide > 0) {
