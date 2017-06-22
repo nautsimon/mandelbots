@@ -1,0 +1,141 @@
+---=[ROBOTICS CLUB REFORM]=---                                                 |
+                                    "FTC sows the seeds of it's own destruction"
+                                                       ---Karl Marx, Das Kapital
+
+---=[Focus Of The Club]=---                                                    |
+    During the beginning of the club we began working on outreach and 
+fundraising while we were waiting for the parts of the robot. This created a 
+bad precedent as we soon had multiple meetings where the goal was not robotics 
+itself but work towards a better robotics organization. Examples of this 
+includes: various meetings with school staff, attempts at getting grants, 
+outreach programs, an entire night wasted on the poster, team t-shirts and the 
+meeting logs. While all these things are good things, we spent more time on    
+these things than the actual robot. In a lot of cases we were doing these things
+to avoid working on the robot. Funding is important, but so far we've gotten all
+of out money by begging our parents. So is really necessary have such formal
+organization?
+
+---=[Communication & Documentation]=---                                        |
+    Throughout the construction of the robot we intended to write down which
+screws needed to be tightened. Each of us all observed screws falling out of the
+robot but we never got around to writing it down. We had an engineering notebook
+which contained all the concepts we were going to explore, but very few people
+read through all of it or refered to it when building. The problem was that we
+never wrote down the specifics of what we were going to build. There was never a
+place where we could see where on the design a screw needed to be. Also when we
+encountered problems we never wrote down the solutions to them, this meant that
+those that worked on the robots the most ended up being the only ones who could
+work on it themselves. Everyone else required their supervision because they
+were the ones that could solve a specific problem. During the programming of the
+bot, I never wrote down what each of the motors were, what the abbreviations I 
+used meant, which motor controllers they were on and how to configure that on 
+the phones. This meant that after every rebuild of the bot, even though somebody
+else had put the wiring back, I went and rechecked it. This was a bad move on my
+part, because instead of writing down how the wiring was supposed to be, I went 
+and tried to monopolize wiring the robot. This made it hard for anyone else to 
+work on the bot. When we were beginning the programming for the robot, Pinto 
+and I wrote down the general plan of what we were going to do on a whiteboard.
+This plan was wildly naive and vague. That whiteboard was pretty much the only 
+communication we had on what needed to be done. Without good 
+compartmentalization, it's impossible to work on something without specifics.
+We never had a more detailed plan of "these are the classes we need, which have
+to implement these functions" or "the shooter needs to take into consideration
+the running time of the motor, the motor voltage, the battery voltage" or "this,
+is what you have to do to make the opencv API work". These things were mentioned
+but they were never placed in an easily accesible place for someone to come and 
+go, "ok so today I'm going to write this function that implements consistant 
+forward movement, the specs say I should take these arguments, and the docs here
+say that the motor controllers don't actually  offer their own encoder movement 
+even though ENCODER_MOVEMENT is a mode I can set the motors to". And as this 
+person goes along and writes the function, he needs to find the number of ticks 
+per rotation of the motor, and he finds 600 as the number on the manufactuerers 
+site, but later finds that it's 600 * 40 as the motor is geared down he should
+communciate that to the rest of the team.
+
+---=[Design]=---                                                               |
+    Without actual plans to refer to, any building done on the robot required
+that you come up with the design of the robot as you build it on the fly. We did
+this in the name of trial and error, but this was not trial and error. In the
+beginning we were considering the theoretical implications of one design over
+the other, and we planned to test them, but despite our resolution to use "trial
+and error" we never did that. What ended up happening was that after we found
+out the component that our robot was currently built with did not work, we 
+rebuilt the entire robot. What we should have done is to have built designs for
+each part of the robot, and put them in actual trials. And for each of these 
+test designs we should have had schematics for how it was, so that rebuilding
+was not somehow both tedious and too hard to and off to someone who needed
+busywork. With actual schematics we can have most of our work be designing and
+testing, and the actual building of our prototypes would be something that is 
+easy to do because you dont have to "figure out" anything in that process. I 
+realize that this takes a lot of effort, and in the timeframe we had we could 
+not done  this and finish the robot on time. But this is one of the problems 
+with goal orientated work, we were not building the robot to explore new 
+designs, we were building the robot to have a good robot.
+
+---=[Tests]=---                                                                |
+When we test the robot, we were never finding out information that we needed
+for our design, we were testing whether or not something worked. We weren't
+testing prototypes or collecting data but trying to, through brute force, 
+correct the errors of what we hoped were our final designs. For example in the 
+current beacon testing, I wrote a process that the robot is to do to detect the 
+beacons. This ultimately rested on what the transition from colored light to no 
+light looked like to the color sensors. Instead of running tests to gather data
+on how that worked, I went ahead and wrote the process anyways and am only 
+testing  wether or not "it worked".
+
+---=[The Problem With FTC]=---                                                 |
+Right off the bat I will admit that as a way to gain official recognition,
+get a model of what to do, and have a final goal, FTC is great. However FTC
+puts restrictions on what we do that take away from the entire point of doing
+robotics. First off the goal, the goal to FTC is to build a robot that collects
+balls with a driver. Do any of us really care about building a machine that
+collects balls? The fun we did have in building benny was designing, and when
+we lost our second competition what we did was see how far benny's shooter
+could go. We were all intrinsicly interested in a powerful shooter, and the
+process of finding out how to make the flywheels, the modification of the
+motors and the control sequence was the real joy in building benny. Robotics
+Club would be better off if we were more focused on novel machines which we
+are interested in becuase of how they work, rather than machines focused on
+practicality that came from creating the most efficient version of the same 
+design.I can admit I dropped the ball on programming. We have no autonomous 
+mode and I spent all my time working on vision recognition that was unused and
+didn't work ta well. But the time I spent on the vision recognition stuff was 
+way more fun than any of the boilerplate autonomous code I wrote. In truth the
+reason we didn't practice for the competition wasn't only because we didn't have
+a field but because what was involved in  that competition wasn't all that 
+interesting to us anyways. The parts we use for FTC are clearly overpriced, and
+if we simply did our own robotics projects we wouldn't need so much money that
+we had to beg for grants.
+
+---=[The Solution]=----                                                        |
+THIS DOES NOT MEAN WE'RE NOT DOING FTC, WE'RE JUST GOING TO TRY OUR OWN THING
+FOR A WHILE
+Next week, after the competition, we're going to try a new style of meeting at
+my house. This will be after thursday atleast as I am moving there this week and
+will need time to set things up. This will be the first trial of a new type of
+meeting where the goal is to create a bipedal platform. This first meeting we
+will not be building anything that will be on the final robot. The new meetings
+I propose will work like this, we only build when we have a design, which if
+simon doesn't teach us cad we can draft on grid paper, and before designing we
+will document any variables we need to know that needs to be tested. We will
+test these variables with actual trials and document that. In addition meetings
+will be recorded so that A: we don't have to spend too much effort documenting
+and B: It'll help curb off topic and crude discussion. I really need to stop
+saying nigger. By having our efforts be private, we can focus entirely on 
+designing a good robot, and not be tempted to engage in a bunch of 
+organizational crap that we are required to. In addition we can focus on
+aspects of the robot we are interested in, such as the electronics, firmware, 
+control and feedback systems and programming that isn't boilerplate. The
+specific agenda of this meeting is to have a motor attached to a gyroscope 
+attempt to resist all forces put on it so that the gyroscope is at rest. This 
+allows us to have a control system where the at the top level is "go to x 
+position" which calls systems that say "due to our difference from position x 
+we need to be at y velocity" which calls a system that says "to be at y velocity, 
+we need z acceleration" which calls a system that says "for z acceleration we 
+need n force that can only be acheived with i voltage". This requires us to 
+document the following: [how to interface with the gyroscope/IMU], and test the 
+following: [what are the characteristics of the brushless motor we are using, 
+with force(or torque) applied as a function of voltage (or power) and rotational 
+velocity in addition to driving frequency]. Together we can then design a
+control and feedback system that has the motor respond with the proper amount
+of force.
