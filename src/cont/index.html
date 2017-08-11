@@ -1,20 +1,13 @@
 <meta name="google-site-verification" content="TIg6posjKIYrBZRGDGyEXLCnD_cynvzRXFz1et2pVKM" />
 <div class="content">
-<script>
-s = 9;
-</script>
 <script src="scripts/slide.js"></script>
-	<div class="slideshow" onload="prev()">
+
+<script>
+setslideshow("slideshow",8,["pics/Picture2.jpg","pics/Picture3.jpg","pics/Picture4.png","pics/Picture5.png","pics/Picture6.jpg","pics/Picture7.jpg","pics/Capture.PNG","pics/Picture9.png"]);
+</script>
+	<div class="slideshow" id="slideshow" onload="upd()">
 		<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button>
-		<img id="img0" class="slide" style="display:block" src="pics/Picture1.png"></img>
-		<img id="img1" class="slide" src="pics/Picture2.jpg"></img>
-		<img id="img2" class="slide" src="pics/Picture3.jpg"></img>
-		<img id="img3" class="slide" src="pics/Picture4.png"></img>
-		<img id="img4" class="slide" src="pics/Picture5.png"></img>
-		<img id="img5" class="slide" src="pics/Picture6.jpg"></img>
-		<img id="img6" class="slide" src="pics/Picture7.jpg"></img>
-		<img id="img7" class="slide" src="pics/Capture.PNG"></img>
-		<img id="img8" class="slide" src="pics/Picture9.png"></img>
+
 		<button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
 	</div>
 <p style="font-style: italic">want more?<a href="log.html"> Here are our meeting logs</a></p>

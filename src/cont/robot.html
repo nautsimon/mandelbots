@@ -1,25 +1,11 @@
 <div class="content">
+<script src="scripts/slide.js"></script>
+
 <script>
-s = 14
-</script>
-<script src="scripts/slide.js">
-</script>
-	<div class="slideshow" onload="prev()">
+setslideshow("slideshow",14,["pics/robot1.jpg","pics/robot2.jpg","pics/robot3.jpg","pics/robot4.jpg","pics/robot5.jpg","pics/robot6.jpg","pics/robot7.jpg","pics/robot8.jpg","pics/robot9.jpg","pics/robot10.jpg","pics/robot11.jpg","pics/robot12.jpg","pics/robot13.jpg","pics/robot14.jpg"]);
+</script>	<div class="slideshow" id="slideshow" onload="upd()">
 		<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button>
-		<img id="img0" class="slide" style="display:block" src="pics/robot1.jpg"></img>
-		<img id="img1" class="slide" src="pics/robot2.jpg"></img>
-		<img id="img2" class="slide" src="pics/robot3.jpg"></img>
-		<img id="img3" class="slide" src="pics/robot4.jpg"></img>
-		<img id="img4" class="slide" src="pics/robot5.jpg"></img>
-		<img id="img5" class="slide" src="pics/robot6.jpg"></img>
-		<img id="img6" class="slide" src="pics/robot7.jpg"></img>
-		<img id="img7" class="slide" src="pics/robot8.jpg"></img>
-		<img id="img8" class="slide" src="pics/robot9.jpg"></img>
-		<img id="img9" class="slide" src="pics/robot10.jpg"></img>
-		<img id="img10" class="slide" src="pics/robot11.jpg"></img>
-		<img id="img11" class="slide" src="pics/robot12.jpg"></img>
-		<img id="img12" class="slide" src="pics/robot13.jpg"></img>
-		<img id="img13" class="slide" src="pics/robot14.jpg"></img>
+		
 		<button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
 	</div>
 

@@ -1,5 +1,5 @@
 * {
-	font-family : monospace ;
+	font-family : sans-serif ;
 	color : #202020 ;
 	background : transparent;
 }
@@ -29,8 +29,10 @@
 	color : #000000 ;*/
 }
 .content {
-	margin-left : 10%;
-	margin-right : 10%;
+	width : 60%;
+	margin-left : auto;
+	margin-right: auto;
+	display : center;
 	margin-top : 20px ;
 	margin-bottom : 20px;
 	/*text-align : center ;*/
@@ -60,6 +62,7 @@
 	width : 120px;
 	margin-top : 2px;
 	margin-bottom : 2px;
+	margin-right : 10px;
 }
 .biodiv {
 	display: table;
@@ -124,17 +127,7 @@ img {
 	margin-right : auto;
 	/*box-shadow: 0px 0px 2px 2px #101010;*/
 }
-.slide {
-	display: none;
-	height : 100%;
-	width : 100%;
-	/*width : auto;*/
-	margin-left : auto;
-	margin-right : auto;
-	/*width : 100%;*/
-	margin-left : auto;
-	margin-right :auto;
-}
+
 .slideshow {
 	display : block;
 	margin-left : auto;
@@ -142,6 +135,11 @@ img {
 	width : 60%;
 	height : 60%;
 	position : relative;
+	background-size : cover;
+    	-webkit-transition: all 1s; /* Safari */
+    	-moz-transition: all 1s;
+	transition: all 1s;
+	transition-property: all;	
 }
 .prev {
 	display : inline-block;
