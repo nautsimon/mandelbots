@@ -129,15 +129,15 @@ img {
 }
 
 .slideshow {
-	display : block;
-	margin-left : auto;
+	display : block; /* horizontal expansion */
+	margin-left : auto; /* centering */
 	margin-right : auto;
-	width : 60%;
-	height : 60%;
+	width : 80%;
+	padding-bottom: 55%; /* makes height x% of width, this maintains aspect ratio */
 	position : relative;
 	background-size : cover;
     	-webkit-transition: all 1s; /* Safari */
-    	-moz-transition: all 1s;
+    	-moz-transition: all 1s; /*not yet implemented in firefox*/
 	transition: all 1s;
 	transition-property: all;	
 }
