@@ -93,6 +93,9 @@ h1 {
 	border-style : solid;
 	border-width : 0px 0px 2px 2px;
 }
+h3 {
+	margin-bottom: -50px;
+}
 a {
 	color : #202020 ;
 	display : inline;
@@ -185,4 +188,22 @@ img {
 	margin-left : auto;
 	margin-right : auto;
 	position : relative;
+}
+footer {
+	margin-top: 50px;
+	width: 100%;
+	margin: center;
+	text-align: center;
+	background-color: #ffffff;
+	font-family: 'Work Sans', sans-serif;
+
+
+	
+}
+.sponsor{
+	
+	display: inline-block;
+	margin-left : 2%;
+	margin-right : 2%;
+	width: 350px;
 }
