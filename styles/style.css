@@ -1,5 +1,6 @@
 * {
-	font-family : sans-serif ;
+
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	color : #202020 ;
 	background : transparent;
 }
@@ -51,7 +52,7 @@
 	text-align : center ;
 	position : relative;
 	display : block;
-	background-color : #101010;;
+	background-color : #000;;
 }
 .active {
 	background-color : #ffffff;
@@ -79,7 +80,7 @@ h {
 	font-size : 140%;
 	font-weight: bold;
 	display : block;
-	margin-left : 2%;
+	margin-left : 0%;
 	margin-top : 10px;
 	margin-bottom: 10px;
 	color : #101010;
@@ -92,27 +93,26 @@ h1 {
 	border-width : 0px 0px 2px 2px;
 }
 a {
-	color : #101010;
+	color : #fff;
 	display : inline;
 }
-a:hover {
+/*a:hover {
 	color : #ffffff;
 	background-color : #101010;
-}
+}*/
 br {
 	margin-top : 20px;
 }
 .navc {
 	font-size : 150%;
-	color : #ffffff;
+	text-decoration: none;
 	margin-left : 1%;
 	margin-right : 1%;
 	position : relative;
 	top : 25%;
 }
 .navc:hover {
-	color : #101010;
-	background-color : #ffffff;
+	color : #AEAEAE;
 }
 .active {
 	background-color : #ffffff;
