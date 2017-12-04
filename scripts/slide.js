@@ -14,7 +14,7 @@ function setslideshow(rid, rslidenum,rslidelinks ) {
 function upd() {	
 	document.getElementById(slideid).style.backgroundImage = "url('" + slidelinks[slide] + "')";
 	clearInterval(slidetimer);
-	slidetimer = setInterval(next,5000);
+	slidetimer = setInterval(next,3500);
 }
 function prev() {
 	if (slide > 0) {
