@@ -1,33 +1,68 @@
 * {
 
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-	color : #202020 ;
+	font-family: "Raleway";
+	color : #000000 ;
 	background : transparent;
+	/* set zero margins so that it has to be set manually 
+	for each element*/
+	margin-top : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+	margin-bottom: 0px;
+	/*padding */
+	padding-top : 0px;
+	padding-bottom : 0px;
 }
-:root {
-	background-color : #ffffff;
+/*classes in the header*/
+.header {
+	/*has div increase to size of float children*/
+	display: inline-block;
+	width: 100%;
+	/* to accomodate for navbar's position absolute*/
+	position: relative;
 }
-.maintitle {
-	color : #202020 ;
-	font-size : 140%;
-	display : block;
-	text-align : center;
-	margin-left : auto;
-	margin-right : auto;
-}
-.logo {
-	/*font-size : 10px;*/
-	display : block;
-	text-align : center;
-	margin-top : 10px;
-	margin-bottom : 10px;
-	margin-left : auto;
-	margin-right : auto;
-	height : 200px;
+.banner {
 	width : auto;
-	box-shadow : 0px 0px 0px 0px;
-	/*font-weight : bold;
-	color : #000000 ;*/
+	/*makes it proportional to the wdith*/
+	height: 10vw;
+	/*make sure it doesn't take too much of the screen*/
+	max-height: 20vh;
+	/*left side of page*/
+	float: left;
+}
+.navbar {
+	/*has it be the size of it's children*/
+	display:inline;
+	/*so it can be in the middle of it's parent header, in terms of Y, but
+	float to right */
+	/*Y axis centering*/
+	position: absolute;
+	/*go to right */
+	right: 0px;
+	/* centering of Y axis*/
+	/*down relative to parent*/
+	top: 50%;
+	/*up realtive to self*/
+	transform:translatey(-50%);	
+	/*highlight*/
+	background-color : #101010; 
+
+	/* padding */
+	padding-top: .5vw;
+	padding: .5vw;
+}
+.navc {
+	/* so it goes in a block*/
+	display: inline-block;
+	/* so that it fits in the header, font-size sets font height but it's proportional*/
+	font-size: 2vw;
+	color: #ffffff;
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+.navc:hover {
+	background-color : #ffffff;
+	color: #c02020;
 }
 .content {
 	width : 60%;
@@ -44,17 +79,7 @@
 	border-color : #801010;*/
 	
 }
-.navbar {
-	margin-left : 0px;
-	margin-right : 0px;
-	margin-top : 0px ;
-	margin-bottom : 0px;
-	height : 50px;
-	text-align : center ;
-	position : relative;
-	display : block;
-	background-color : #000;;
-}
+
 .active {
 	background-color : #ffffff;
 }
@@ -97,7 +122,8 @@ h3 {
 	margin-bottom: -45px;
 }
 a {
-	color : #202020 ;
+	color: #c01010;
+	text-decoration : none;
 	display : inline;
 }
 /*a:hover {
@@ -107,18 +133,8 @@ a {
 br {
 	margin-top : 20px;
 }
-.navc {
-	font-size : 150%;
-	color : #fff;
-	text-decoration: none;
-	margin-left : 1%;
-	margin-right : 1%;
-	position : relative;
-	top : 25%;
-}
-.navc:hover {
-	color : #AEAEAE;
-}
+
+
 .active {
 	background-color : #ffffff;
 }
