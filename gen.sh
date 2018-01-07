@@ -9,7 +9,7 @@ for page in $pages; do
 	rm $page $page.tmp
 	#adds the header
 	cat src/header.html >> $page.tmp
-
+	echo '<!--- THIS IS A PROCESSED PAGE, DO NOT EDIT THIS PAGE EDIT cont/ -->' >> $page.tmp
 	#finds the [SETTITLE], but ignores \[SETTITLE], then filters out the [SETTITLE] part
 	#the head is to make it use the last one
 	title=$(cat cont/$page | grep '\[SETTITLE\]'| sed '/\\\[SETTITLE\]/d; s/\[SETTITLE\]//' | tail -n 1)
