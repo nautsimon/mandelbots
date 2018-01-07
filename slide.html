@@ -1,0 +1,79 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title></title>
+	<link rel="icon" type="image/png" href="mandel.png" sizes="196x196">
+	<meta name="google-site-verification" content="TIg6posjKIYrBZRGDGyEXLCnD_cynvzRXFz1et2pVKM" />	
+</head>
+<meta charset="utf-8"/>
+<body>
+	<div class="header">
+	<img class ="banner" src="https://i.imgur.com/lnjw8IE.png"></img>
+		<div class="navbar">
+			<a href="index.html" class="navc">[home]</a>
+			<a href="ftc.html" class="navc">[about ftc]</a>
+			<a href="contact.html" class="navc">[contact us]</a>
+			<a href="robot.html" class="navc">[our robot]</a>
+			<a href="log.html" class="navc">[meeting logs]</a>
+			<a href="bios.html" class="navc">[bios]</a>
+		</div>
+	</div>
+<div class="content">
+<!--- THIS IS A PROCESSED PAGE, DO NOT EDIT THIS PAGE EDIT cont/ -->
+<script>
+slide = 0;
+i = 0;
+
+function prev() {
+	if (slide > 0) {
+		slide--;
+	} else {
+		slide = 4;
+	}
+	i = 0;
+	while (i < 5) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+function next() {
+	if (slide < 4) {
+		slide++;
+	} else {
+		slide = 0;
+	}
+	i = 0;
+	while (i < 5) {
+		if (i == slide) {
+			document.getElementById("img" + i.toString()).style.display = "block";
+		} else {
+			document.getElementById("img" + i.toString()).style.display = "none"; 
+		}
+		i++;
+	}
+}
+
+</script>
+<div class="content">
+	<div class="slideshow" onload="prev()">
+		<img id="img0" class="slide" style="display:block" src="pics/slide0.jpeg"></img>
+		<img id="img1" class="slide" src="pics/slide1.jpeg"></img>
+		<img id="img2" class="slide" src="pics/slide2.jpeg"></img>
+		<img id="img3" class="slide" src="pics/slide3.jpeg"></img>
+		<img id="img4" class="slide" src="pics/slide4.jpeg"></img>
+	</div>
+	<div class="slidebar">
+	<button class="prev" onclick="prev()"><img src="pics/chevron-left.png" class="navi"></img></button><button class="next" onclick="next()"><img src="pics/chevron-right.png" class="navi"></img></button>
+	</div>
+</div>
+
+	<div class="footer">
+	<h3 class = "sponsor">Proudly Sponsored by:<h3>
+	<a href="https://www.unither.com"><img  src="pics/UT.jpg" alt = "sponsor" class="sponsor"></a>
+  	<a href="http://orionmd.org"><img  src="pics/orion.png" alt = "sponsor" class="sponsor"></a>
+	</div>
+	</div>
+</body>
