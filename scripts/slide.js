@@ -7,8 +7,7 @@ function setslideshow(rid, rslidenum,rslidelinks ) {
 	slideid = rid;
 	slidenum = rslidenum;
 	slidelinks = rslidelinks
-	slidetimer = setInterval(next,5000);
-	upd();
+	slidetimer = setInterval(upd,10);
 }
 
 function upd() {	
