@@ -8,5 +8,10 @@ root directory.
 Design notes:
 colors:
 white #ffffff
-black #000000
+black #101010
 red #c02020
+fonts:
+	Raleway (250 weight)
+	https://fonts.google.com/specimen/Raleway
+	Roboto Light for body text
+	https://fonts.google.com/specimen/Roboto
