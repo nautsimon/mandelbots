@@ -1,1 +1,0 @@
-the pages in the root directory should not be edited, they are created by running genpages.sh. Instead edit the ones in src/cont/. Genpics just makes a source file out of all the pics in pic/
