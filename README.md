@@ -8,8 +8,9 @@ root directory.
 Design notes:
 colors:
 white #ffffff
-black #101010
-red #c02020
+black #000000
+dark grey #101010
+red #801010
 fonts:
 	Raleway (250 weight)
 	https://fonts.google.com/specimen/Raleway
