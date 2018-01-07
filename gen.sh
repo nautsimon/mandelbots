@@ -22,11 +22,11 @@ for page in $pages; do
 	#same for the date
 	cat $page.tmp | sed '/\\\[SETDATE\]/bx; /\[SETDATE\].*/d;:x s/\\\[SETDATE\]/\[SETDATE\]/' >> $page
 
-	#adds the index if its the homepage
-	if [ "$page" == "index.html" ]; then
-		cat index >> $page
-		rm index
-	fi
+	#adds the index if its the homepage currently disabled
+	#if [ "$page" == "index.html" ]; then
+	#	cat index >> $page
+	#	rm index
+	#fi
 	#adds the footer
 	cat src/footer.html >> $page
 
@@ -38,6 +38,6 @@ for page in $pages; do
 	cat $page.tmp | sed "/\\\\\[DATE\]/bx; s/\[DATE\]/$date/; :x s/\\\\\[DATE\]/\[DATE\]/" > $page
 
 	rm $page.tmp
-	#adds to the index
+	#adds to the index, currently disabled
 	echo "<a href=\"$page\">[$title] $date</a>" >> index
 done
