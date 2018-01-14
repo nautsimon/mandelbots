@@ -1,0 +1,120 @@
+---=[Components]=---
+<Rev Expansions Hubs>
+[RV0] Rev Motor Controller 0
+[RV1] Rev Motor Controller 1
+	Connections:
+		<Motors> (jst vh 2-pin connectors w/ ? encoder connector)
+		[MP0] Motor 0 w/ Encoder [EN0]
+		[MP1] Motor 1 w/ Encoder [EN1]
+		[MP2] Motor 2 w/ Encoder [EN2]
+		[MP3] Motor 3 w/ Encoder [EN3]
+		<Battery> (xt30 connector)
+		[BIN] Battery In
+		[BOT] Battery Out
+		<GPIOs> (2 pins per port apparently)
+		[GD0-7] Digital GPIOs 0 - 7
+		[GA0-3] Analog GPIOs 0 - 7
+		<i2C>
+		[IC0-3] I2C ports 0 - 3
+		<UART> (RS485)
+		[UR2] UART port 2
+		[UR4] UART port 4
+		<RS485> (Used for Daisychaining multiple hubs)
+		[RS0] RS485 port 0 (unlabeled)
+		[RS1] RS485 port 1
+		<5V Power> (GND | VCC | GND)
+		[5V0] Left 5V port
+		[5V1] Right 5V port
+		<Servo Ports> (GND | VCC | CONTROL)
+		[SR0-5] Servo ports 0 - 5
+		[USB] Mini USB port
+---=[Physical Layout of the Rev Expansion Hub]=---
+			     [USB]
+[BOUT][BIN]						[UR2]
+[MP0]							[UR4]
+ [EN0]							[RS0]
+[MP1]							[RS1]
+ [EN1]							[IC3]
+[MP2]							[IC2]
+ [EN2]							[IC1]
+[MP3]							[IC0]
+ [EN3]							[GD6-7]
+							[GD4-5]
+							[GD2-3]
+							[GD0-1]
+							[GA2-3]
+							[GA0-1]
+	[SR0][SR1][SR2][SR3][SR4][SR5] [5V0[5V1]
+
+[BAT] Li-Ion Battery (? port)
+<Drivetrain Motors>
+These motors are all 60:1 Neverest am3103 motors
+https://www.andymark.com/NeveRest-60-Gearmotor-p/am-3103.htm
+The encoder is 7 pulses per revolution, so 420 pulses per revolution of the
+shaft.
+
+[FLM] Front Left Motor (rotate CCW to go forwards)
+The shaft is facing outwards
+--[  ]=
+
+[FRM] Front Right Motor (rotate CCW to go forwards)
+the shaft is facing outwards
+=[  ]--
+
+[BLM] Back Left Motor (rotate CW to go forwards)
+the shaft is facing inwards
+=[  ]--
+
+[BRM] Back Right Motor (rotate CW to go forwards)
+The Shaft is Facing inwards
+--[  ]=
+
+<Intake Servos>
+These are continuous servos HSR-1425CR
+[LIS] Left Intake Servo (rotate CW)
+[RIS] Right Intake Servo (rotate CCW)
+
+[LS] Lift Servo HS-785HB
+CW to lift up, CCW to push in
+This servo lifts the paddle that pushes blocks into the intake
+
+[FS] Flap Servo HS-785HB
+mounting direction unknown
+This servo adjusts the plate that the blocks rest on
+
+<Pulley Motors>
+
+[PM] Pulley Motor (likely 40:1 or 60:1 Neverest motor)
+mounting direction unknown
+This is the motor that lifts the pulles that the block is on.
+
+---=[General Physical Layout of the Robot]=---
+	<Top Down VIew>
+
+	      Front
+	[LIS]  [LS]  [RIS]
+	[FLM]        [FRM]
+Left	       [FS]         Right
+	
+	       [PM]
+	[BLM]        [BRM]
+	       Back
+---=[Electricsl Connections]=---
+[RV0]
+	[USB] - Phone
+	[BIN] - [BAT]
+	[BOT] - [RV1:BIN]
+	[RS0] - [RV1:RS1] || [RS1] - [RV1:RS0]
+	[MP0] - [FLM]
+	[MP1] - [FRM]
+	[MP2] - [BLM]
+	[MP3] - [BRM]
+	[SR0] - [LIS]
+	[SR1] - [RIS]
+	[SR2] - [LS]
+	[SR3] - [FS]
+[RV1]
+	[BIN] - [RV0:BOT]
+	[RS0] - [RV0:RS1] || [RS1] - [RV0:RS0]
+	[MP0] - [PM]
+
