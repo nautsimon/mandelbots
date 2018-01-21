@@ -88,6 +88,29 @@ This servo adjusts the plate that the blocks rest on
 mounting direction unknown
 This is the motor that lifts the pulles that the block is on.
 
+<Mechanum Wheel>
+The outer side is labeled with an O, and the inner side with an I
+The name of the wheel is also labeled on that roll-pin
+
+[LM] Front Left Wheel // from the top
+[RM] Front Right Wheel \\ from the top
+[LOM] Back Left Wheel \\ from the top
+[ROM] Back Right Wheel // from the top
+
+	  Front
+[LM] [FLM]     [FRM] [RM]
+
+Left                Right
+
+[LOM][BLM]     [BRM][ROM]
+          Back
+
+Top View Of The Wheels
+//----\\
+  |  |
+  |  |
+\\----//
+
 ---=[General Physical Layout of the Robot]=---
 	<Top Down VIew>
 
