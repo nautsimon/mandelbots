@@ -57,11 +57,11 @@ shaft.
 The shaft is facing outwards
 --[  ]=
 
-[FRM] Front Right Motor (rotate CCW to go forwards)
+[FRM] Front Right Motor (rotate CW to go forwards)
 the shaft is facing outwards
 =[  ]--
 
-[BLM] Back Left Motor (rotate CW to go forwards)
+[BLM] Back Left Motor (rotate CCW to go forwards)
 the shaft is facing inwards
 =[  ]--
 
