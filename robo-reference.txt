@@ -1,7 +1,7 @@
 ---=[Components]=---
 <Rev Expansions Hubs>
-[RV0] Rev Motor Controller 0
-[RV1] Rev Motor Controller 1
+[RV0] Rev Motor Controller 0 (right)
+[RV1] Rev Motor Controller 1 (left)
 	Connections:
 		<Motors> (jst vh 2-pin connectors w/ ? encoder connector)
 		[MP0] Motor 0 w/ Encoder [EN0]
@@ -30,7 +30,7 @@
 		[USB] Mini USB port
 ---=[Physical Layout of the Rev Expansion Hub]=---
 			     [USB]
-[BOUT][BIN]						[UR2]
+[BIN][BOUT]						[UR2]
 [MP0]							[UR4]
  [EN0]							[RS0]
 [MP1]							[RS1]
@@ -48,20 +48,18 @@
 
 [BAT] Li-Ion Battery (? port)
 <Drivetrain Motors>
-These motors are all 60:1 Neverest am3103 motors
-https://www.andymark.com/NeveRest-60-Gearmotor-p/am-3103.htm
-The encoder is 7 pulses per revolution, so 420 pulses per revolution of the
-shaft.
+These motors are all 40:1 Neverest Motors
+unknown # of encoder ticks
 
 [FLM] Front Left Motor (rotate CCW to go forwards)
 The shaft is facing outwards
 --[  ]=
 
-[FRM] Front Right Motor (rotate CW to go forwards)
+[FRM] Front Right Motor (rotate CCW to go forwards)
 the shaft is facing outwards
 =[  ]--
 
-[BLM] Back Left Motor (rotate CCW to go forwards)
+[BLM] Back Left Motor (rotate CW to go forwards)
 the shaft is facing inwards
 =[  ]--
 
@@ -70,9 +68,6 @@ The Shaft is Facing inwards
 --[  ]=
 
 <Intake Servos>
-These are continuous servos HSR-1425CR
-[LIS] Left Intake Servo (rotate CW)
-[RIS] Right Intake Servo (rotate CCW)
 
 [LS] Lift Servo HS-785HB
 CW to lift up, CCW to push in
@@ -82,62 +77,69 @@ This servo lifts the paddle that pushes blocks into the intake
 mounting direction unknown
 This servo adjusts the plate that the blocks rest on
 
-<Pulley Motors>
+<Other Motors>
+These motors are all 60:1 Neverest am3103 motors
+https://www.andymark.com/NeveRest-60-Gearmotor-p/am-3103.htm
+The encoder is 7 pulses per revolution, so 420 pulses per revolution of the
+shaft.
 
-[PM] Pulley Motor (likely 40:1 or 60:1 Neverest motor)
+[PM] Pulley Motor (60:1 Neverest motor)
 mounting direction unknown
 This is the motor that lifts the pulles that the block is on.
 
-<Mechanum Wheel>
-The outer side is labeled with an O, and the inner side with an I
-The name of the wheel is also labeled on that roll-pin
+[LIM] Intake Motor (40:1 Neverest Motor)
+ |  (O)
+[ ]
+[ ]
+CCW to move intake in
 
-[LM] Front Left Wheel // from the top
-[RM] Front Right Wheel \\ from the top
-[LOM] Back Left Wheel \\ from the top
-[ROM] Back Right Wheel // from the top
+[RIM] Intake Motor (40:1 Neverest)
+(O) |
+   [ ]
+   [ ]
+CW to move intake in
 
-	  Front
-[LM] [FLM]     [FRM] [RM]
 
-Left                Right
+<Arm Actuaters>
 
-[LOM][BLM]     [BRM][ROM]
-          Back
+[AM] Arm Motor (60:1 Neverest Motor)
+mounting direction unknown
+this motor actuates the arm slide
 
-Top View Of The Wheels
-//----\\
-  |  |
-  |  |
-\\----//
+[AS] Arm Servo HS-785HB
+actuates the relic grabber
+mounting direction unknown
 
 ---=[General Physical Layout of the Robot]=---
 	<Top Down VIew>
 
 	      Front
-	[LIS]  [LS]  [RIS]
+	[LIM]  [LS]  [RIM]
+	[AM][AS]
 	[FLM]        [FRM]
 Left	       [FS]         Right
-	
+	[RV1]        [RV0]
 	       [PM]
 	[BLM]        [BRM]
 	       Back
 ---=[Electricsl Connections]=---
-[RV0]
+[RV0] (RIGHT)
 	[USB] - Phone
 	[BIN] - [BAT]
 	[BOT] - [RV1:BIN]
-	[RS0] - [RV1:RS1] || [RS1] - [RV1:RS0]
-	[MP0] - [FLM]
+	[RS0] - [RV1:RS0]
+	[MP0] - [AM]
 	[MP1] - [FRM]
-	[MP2] - [BLM]
-	[MP3] - [BRM]
-	[SR0] - [LIS]
-	[SR1] - [RIS]
+	[MP2] - [BRM]
+	[MP3] - [RIM]
+	[SR0] - [AS]
+	[SR1] - N/A
 	[SR2] - [LS]
 	[SR3] - [FS]
-[RV1]
+[RV1] (LEFT)
 	[BIN] - [RV0:BOT]
-	[RS0] - [RV0:RS1] || [RS1] - [RV0:RS0]
+	[RS0] - [RV0:RS0]
 	[MP0] - [PM]
-
+	[MP1] - [FLM]
+	[MP2] - [BLM]
+	[MP3] - [LIM]
