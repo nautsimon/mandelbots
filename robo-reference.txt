@@ -1,7 +1,7 @@
 ---=[Components]=---
 <Rev Expansions Hubs>
-[RV0] Rev Motor Controller 0 (right)
-[RV1] Rev Motor Controller 1 (left)
+[RV0] Rev Motor Controller 1 (right)
+[RV1] Rev Motor Controller 2 (left)
 	Connections:
 		<Motors> (jst vh 2-pin connectors w/ ? encoder connector)
 		[MP0] Motor 0 w/ Encoder [EN0]
@@ -125,8 +125,7 @@ Left	       [FS]         Right
 ---=[Electricsl Connections]=---
 [RV0] (RIGHT)
 	[USB] - Phone
-	[BIN] - [BAT]
-	[BOT] - [RV1:BIN]
+	[BIN] - [RV1:BOT]
 	[RS0] - [RV1:RS0]
 	[MP0] - [PM]
 	[MP1] - [BRM]
@@ -137,7 +136,8 @@ Left	       [FS]         Right
 	[SR2] - [LS]
 	[SR3] - [FS]
 [RV1] (LEFT)
-	[BIN] - [RV0:BOT]
+	[BIN] - [BAT]
+	[BOT] - [RV0:BIN]
 	[RS0] - [RV0:RS0]
 	[MP0] - [AM]
 	[MP1] - [FLM]
