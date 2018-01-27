@@ -1,0 +1,12 @@
+[Left Trigger] Hold down to keep lift flap up					[Right Trigger] Hold down to keep arm claws clenched
+
+	    	^ up (lift up)								
+	    	|									[Y] Intake toggle
+left(arm in)<-- + --> right(arm out)					Crawl Regular[X]   [B] Crawl Slow
+	    	|									[A]
+	    	v down (lift down)							Crawl Super Slow
+
+	    	
+
+	joystick Left Y = vertical movement
+	joystick Left X = horizontal movement				joystick Right X = Turning
