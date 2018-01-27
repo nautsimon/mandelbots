@@ -91,13 +91,13 @@ This is the motor that lifts the pulles that the block is on.
  |  (O)
 [ ]
 [ ]
-CCW to move intake in
+CW to move intake in
 
 [RIM] Intake Motor (40:1 Neverest)
 (O) |
    [ ]
    [ ]
-CW to move intake in
+CCW to move intake in
 
 
 <Arm Actuaters>
