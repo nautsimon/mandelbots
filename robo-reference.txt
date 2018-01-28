@@ -71,6 +71,7 @@ The Shaft is Facing inwards
 Normal Servos go clockwise in rotation from 0' to 180'.
 in ftc the values range from 0.0 to 1.0.
 The HS-785HB servo is unique in that it is geared down with a servo range of < 4 rotations
+
 [LS] Lift Servo HS-785HB
 CW(closer to 1) to lift up, CCW(closer to 0) to push in
 This servo lifts the paddle that pushes blocks into the intake
@@ -88,7 +89,7 @@ n/a all
 [AS] Arm Servo HFR-1425CR
 mounting direction unknown
 This servo adjusts the plate that the blocks rest on
-CW(closer to 1) to open, CCW(closer to 0) to drop
+CW(closer to 1.0) to open, CCW(closer to -1.0) to close
 
 
 <Other Motors>
@@ -146,9 +147,10 @@ Left	       [FS]         Right
 	[MP2] - [FRM]
 	[MP3] - [RIM]
 	[SR0] - [AS]
-	[SR1] - N/A
-	[SR2] - [LS]
-	[SR3] - [FS]
+	[SR1] - [FS]
+	[SR2] - [WS]
+	[SR3] - [LF]
+	[SR4]
 [RV1] (LEFT)
 	[BIN] - [BAT]
 	[BOT] - [RV0:BIN]
