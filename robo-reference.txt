@@ -102,7 +102,7 @@ shaft.
 mounting direction unknown
 This is the motor that lifts the pulles that the block is on.
 
-[LIM] Intake Motor (40:1 Neverest Motor)
+[LIM] Intake Motor (40:1 Neverest Motor) 7 * 4 = 280 PPR
  |  (O)
 [ ]
 [ ]
@@ -146,11 +146,6 @@ Left	       [FS]         Right
 	[MP1] - [BRM]
 	[MP2] - [FRM]
 	[MP3] - [RIM]
-	[SR0] - [AS]
-	[SR1] - [FS]
-	[SR2] - [WS]
-	[SR3] - [LF]
-	[SR4]
 [RV1] (LEFT)
 	[BIN] - [BAT]
 	[BOT] - [RV0:BIN]
@@ -159,3 +154,6 @@ Left	       [FS]         Right
 	[MP1] - [FLM]
 	[MP2] - [BLM]
 	[MP3] - [LIM]
+	[SR0] - [AS]
+	[SR1] - [WS]
+	[SR5] - [FS]
