@@ -71,6 +71,8 @@ The Shaft is Facing inwards
 Normal Servos go clockwise in rotation from 0' to 180'.
 in ftc the values range from 0.0 to 1.0.
 The HS-785HB servo is unique in that it is geared down with a servo range of < 4 rotations
+Because of low resolutions of the servo controller, any increments under .05
+will not take affect, and the discrete steps are all ~90 degrees each.
 
 [LS] Lift Servo HS-785HB
 CW(closer to 1) to lift up, CCW(closer to 0) to push in
@@ -84,11 +86,17 @@ CW(closer to 1) to receive, CCW(closer to 0) to drop
 [WS] Wrist Servo HS-785HB
 n/a all
 
+<Regular Servos>
+[JS] Jewel Servo HS-485HB
+drives the jewel stick
+CCW to stick out(closer to 0), CW (closer to 1)to pull up
+this one should have the normal 180' range of motion.
+
+
 <Continous rotation servos>
 
 [AS] Arm Servo HFR-1425CR
 mounting direction unknown
-This servo adjusts the plate that the blocks rest on
 CW(closer to 1.0) to open, CCW(closer to -1.0) to close
 
 
@@ -142,18 +150,19 @@ Left	       [FS]         Right
 	[USB] - Phone
 	[BIN] - [RV1:BOT]
 	[RS0] - [RV1:RS0]
-	[MP0] - [PM]
-	[MP1] - [FRM]
-	[MP2] - [BRM]
+	[MP0] - [AM]
+	[MP1] - [BRM]
+	[MP2] - [FRM]
 	[MP3] - [RIM]
 [RV1] (LEFT)
 	[BIN] - [BAT]
 	[BOT] - [RV0:BIN]
 	[RS0] - [RV0:RS0]
-	[MP0] - [AM]
+	[MP0] - [PM]
 	[MP1] - [FLM]
 	[MP2] - [BLM]
 	[MP3] - [LIM]
 	[SR0] - [AS]
 	[SR1] - [WS]
+	[SR2] - [JS]
 	[SR5] - [FS]
