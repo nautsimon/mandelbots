@@ -142,7 +142,7 @@ Left	       [FS]         Right
 	[USB] - Phone
 	[BIN] - [RV1:BOT]
 	[RS0] - [RV1:RS0]
-	[MP0] - [PM]
+	[MP0] - [AM]
 	[MP1] - [BRM]
 	[MP2] - [FRM]
 	[MP3] - [RIM]
@@ -150,7 +150,7 @@ Left	       [FS]         Right
 	[BIN] - [BAT]
 	[BOT] - [RV0:BIN]
 	[RS0] - [RV0:RS0]
-	[MP0] - [AM]
+	[MP0] - [PM]
 	[MP1] - [FLM]
 	[MP2] - [BLM]
 	[MP3] - [LIM]
