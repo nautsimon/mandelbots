@@ -1,4 +1,5 @@
-[Left Trigger] Hold down to keep lift flap up					[Right Trigger] Hold down to keep arm claws clenched
+[Left Trigger] Flap toggle					[Right Trigger] Arm wrist toggle
+[Left Button]Jewel arm toggle					[Right Button] Arm Claw toggle
 
 	    	^ up (lift up)								
 	    	|									[Y] Intake toggle
@@ -8,5 +9,6 @@ left(arm in)<-- + --> right(arm out)					Crawl Regular[X]   [B] Crawl Slow
 
 	    	
 
-	joystick Left Y = vertical movement
+	joystick Left Y = vertical movement				joystick Right Y = Arm
 	joystick Left X = horizontal movement				joystick Right X = Turning
+									joystick button, Arm lock
